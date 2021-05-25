@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://thymeleaf.org">
 <head>
     <title>Burger Shop</title>
     <link rel="stylesheet" th:href="@{/styles.css}" />
@@ -44,6 +44,7 @@
         </div>
         <div class="ingredient-group" id="sauces">
             <h3>Select your sauce:</h3>
+
             <div th:each="ingredient : ${sauce}">
                 <input name="ingredients" type="checkbox" th:value="${ingredient.id}"
                 />
